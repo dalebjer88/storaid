@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+:root {
+   --color-primary: #FFFFFF;
+   --color-secondary: #12372A;
+   --color-accent: #F1C30C;
+   --color-accent-3: rgba(18, 55, 42, 0.8);
+}
+
+html, body {
+    margin: 0;
+    scroll-behavior: smooth;
+    color: var(--color-primary);
+    background-color: var(--color-primary);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter";
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    
+
+    @media (min-width: 768px) {
+       
+    }
+
+    @media (min-width: 1920px) {
+       
+    }
+}
