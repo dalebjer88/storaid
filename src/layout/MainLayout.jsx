@@ -1,20 +1,22 @@
 import React from 'react';
 import Header from './Header';
-import Navbar from './Navbar'; 
+import Navbar from './Navbar';
+import Footer from './Footer'; 
 
 export default function MainLayout({ children }) {
   return (
     <div className="app-wrapper"> 
       
      
-      <Header />
-      <Navbar />
+      <Header/>
+      <Navbar/>
+       
     
       <main className="page-content">
         {children} 
       </main>
-      
-      {/* <Footer /> */}
+      <Footer/>
+   
     </div>
   );
 }
