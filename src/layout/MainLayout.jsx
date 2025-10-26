@@ -1,22 +1,20 @@
 import React from 'react';
-import Header from './Header';
-import Navbar from './Navbar';
+import { Outlet } from 'react-router-dom'; 
+import Header from './Header'; 
+import Navbar from './Navbar'; 
 import Footer from './Footer'; 
 
-export default function MainLayout({ children }) {
-  return (
-    <div className="app-wrapper"> 
-      
-     
-      <Header/>
-      <Navbar/>
-       
-    
-      <main className="page-content">
-        {children} 
-      </main>
-      <Footer/>
-   
-    </div>
-  );
-}
+const MainLayout = () => {
+    return (
+      <>
+        <Header />
+        <Navbar /> 
+        <main>
+        <Outlet /> 
+        </main>
+        <Footer /> 
+      </>
+    );
+};
+
+export default MainLayout;
