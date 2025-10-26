@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './Header'; 
-// import Footer from './Footer'; // Kommenterad tills den behövs
+import Header from './Header';
+import Navbar from './Navbar'; 
 
 export default function MainLayout({ children }) {
   return (
@@ -8,7 +8,7 @@ export default function MainLayout({ children }) {
       
      
       <Header />
-      
+      <Navbar />
     
       <main className="page-content">
         {children} 
