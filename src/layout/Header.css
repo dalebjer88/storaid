@@ -4,11 +4,10 @@
 }
 
 .header-container {
-    max-width: 1825px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
-    padding: 0.5rem 0;
-
+    padding: 0.5rem 3rem;
 }
 
 .header-content {
