@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap');
+@import "./styles/button.css";
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -24,9 +25,33 @@ html, body {
     line-height: 1.5;
 }
 
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--color-primary)
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 .container {
     width: 100%;
     margin: 0 auto;
+    max-width: 1365px;
     
 
     @media (min-width: 768px) {

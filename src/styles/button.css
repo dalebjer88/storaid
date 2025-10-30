@@ -1,0 +1,32 @@
+.btn, a.btn, button.btn {
+    font-size: var(--font-size-body2);
+    font-family: "Urbanist", "Inter", sans-serif;
+    display: inline-block; 
+    font-weight: 600;
+    padding: 0.7rem 2rem; 
+    border-radius: 6px;
+    border: none; 
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn--primary {
+    background-color: var(--color-accent); 
+    color: var(--color-secondary);         
+}
+
+.btn--on-light:hover,
+.btn--on-light:focus-visible {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);             
+    outline: 3px solid var(--color-accent); 
+
+}
+
+.btn--on-dark:hover,
+.btn--on-dark:focus-visible {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);             
+    outline: 3px solid var(--color-accent); 
+}
