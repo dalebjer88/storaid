@@ -4,6 +4,8 @@ import Header from './Header';
 import Navbar from './Navbar'; 
 import Footer from './Footer';
 import HeroSection from '../components/HeroSection';
+import SubscribeSection from '../components/SubscribeSection';
+
 
 const MainLayout = ({ heroProps }) => {
   return (
@@ -12,7 +14,8 @@ const MainLayout = ({ heroProps }) => {
       <Navbar /> 
       <main>
         {heroProps && <HeroSection {...heroProps} />}    
-        <Outlet /> 
+        <Outlet />
+        <SubscribeSection/> 
       </main>
       <Footer /> 
     </>

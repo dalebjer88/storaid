@@ -8,6 +8,7 @@
 :root {
     --color-primary: #FFFFFF;
     --color-secondary: #12372A;
+    --color-background3: #FAF8EC;
     --color-accent: #F1C30C;
     --color-accent-3: rgba(18, 55, 42, 0.8);
     --font-size-body: 1rem;
@@ -31,6 +32,12 @@ h1 {
     color: var(--color-primary)
 }
 
+h3 {
+    font-size: 52px;
+    font-weight: 700;
+    font-family: urbanist;
+}
+
 h4 {
     font-size: 25px;
     font-weight: 600;
@@ -51,7 +58,8 @@ h4 {
 .container {
     width: 100%;
     margin: 0 auto;
-    max-width: 1365px;
+    max-width: 1460px;
+    padding: 0 3rem;
     
 
     @media (min-width: 768px) {

@@ -15,7 +15,8 @@ const ArrowIcon = (
 function Footer() {
   return (
     <div className="footer">
-        <div className="footer-container">
+        <div className="container">
+            <div className ="footer-content">
                 <div className="footer-brand">
                     <p className="footer-copyright">
                         © {currentYear} StorAid. All rights reserved.
@@ -31,7 +32,8 @@ function Footer() {
                         </li>
                     </ul>
                 </nav>
-            </div>
+           </div>
+        </div>
     </div>
   );
 }
