@@ -34,13 +34,32 @@ h1 {
 
 h3 {
     font-size: 52px;
+    line-height: 52px;
     font-weight: 700;
     font-family: urbanist;
+    margin: 0.75rem 0;
 }
 
 h4 {
     font-size: 25px;
     font-weight: 600;
+    margin: 0;
+    color: var(--color-accent)
+}
+
+h5 {
+    font-family: urbanist;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25px;
+    margin: 0;
+    color: var(--color-secondary);
+}
+
+h6 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .sr-only {

@@ -1,0 +1,47 @@
+.about-content {
+    display: flex;
+    gap: 2rem;
+    padding: 5rem 0;
+}
+
+.vision-mission {
+    display: flex;
+    gap: 2rem;
+}
+
+.vm-pair {
+    border: 3px solid transparent;
+    border-radius: 10px;
+    transition: border-color .2s ease;
+    padding: 1rem;
+}
+
+.pair-text {
+    margin-bottom: 0;
+}
+
+.vm-pair:hover,
+.vm-pair:focus-within {
+border-color: var(--color-accent);
+}
+
+.about-contact {
+    display: flex;
+    gap: 5rem;
+    padding-top: 2.5rem;
+}
+
+.about-number {
+    text-decoration: none;
+    color: var(--color-secondary)
+}
+
+.phone-pair {
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+}
+
+.about-btn {
+    height: 45px;
+}
