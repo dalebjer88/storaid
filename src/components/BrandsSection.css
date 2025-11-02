@@ -1,0 +1,21 @@
+.brands-section {
+    background-color: var(--color-background3);
+}
+
+.brands-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brands-content {
+    padding: 2.5rem 0;
+}
+
+.brands-content img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.brands-content img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
