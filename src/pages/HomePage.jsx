@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutSection from '../components/AboutSection';
 import BrandsSection from '../components/BrandsSection';
+import ServicesSection from '../components/ServicesSection';
 
 export default function HomePage() {
   return (
@@ -9,6 +10,7 @@ export default function HomePage() {
     <h2 className="sr-only">Startsida - StorAid</h2> 
     <AboutSection/>
     <BrandsSection/>
+    <ServicesSection/>
     </>
   );
 }
