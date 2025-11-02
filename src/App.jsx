@@ -45,7 +45,8 @@ function App() {
           <MainLayout 
             heroProps={{
               title: "About Us",
-              subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+              subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",              
+              variant: "about"
             }}
           />
         }
@@ -60,7 +61,8 @@ function App() {
           <MainLayout 
             heroProps={{
               title: "Services",
-              subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+              subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+              variant: "services"
             }}
           />
         }
@@ -75,7 +77,8 @@ function App() {
           <MainLayout 
             heroProps={{
               title: "Contact Us",
-              subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+              subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+              variant:"contact"
             }}
           />
         }
@@ -90,7 +93,8 @@ function App() {
           <MainLayout 
             heroProps={{
               title: "Booking",
-              subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+              subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+              variant: "booking"
             }}
           />
         }
@@ -104,8 +108,11 @@ function App() {
         element={
           <MainLayout 
             heroProps={{
-              title: "404: Page Not Found",
-              subtitle: "The page you are looking for does not exist or has been moved."
+              preTitle: "Oops!",
+              title: "Page Not Found",
+              subtitle: "Sorry, the page you are looking for does not exist. It may have been moved, removed altogether or is temporarily unavailable.",
+              ctaButton: (<a href="/" className="btn btn--primary btn--on-dark">Back To Home</a>),
+              variant: "notfound"
             }}
           />
         }

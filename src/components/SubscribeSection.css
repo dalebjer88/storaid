@@ -7,13 +7,13 @@
 .subscribe-content {
   display: flex;
   align-items: center;
-  gap: 4rem;
-  max-width: 1200px;
+  gap: 5rem;
   margin: 0 auto;
 }
 
 .subscribe-title {
   margin: 0;
+  padding: 1rem 0;
   color: var(--color-secondary);
 }
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import './HeroSection.css';
 
-export default function HeroSection({ preTitle, title, subtitle, ctaButton, image }) {
+export default function HeroSection({ preTitle, title, subtitle, ctaButton, image, variant }) {
   return (
-    <section className="hero-section" aria-labelledby="hero-heading">
+    <section className={`hero-section ${variant ? `hero-${variant}` : ''}`} aria-labelledby="hero-heading">
       <div className="container"> 
         <div className="hero-content">
           <div className="hero-content-wrapper">

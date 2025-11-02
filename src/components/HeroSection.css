@@ -2,11 +2,53 @@
     background-color: var(--color-accent-3);
 }
 
+.hero-about .hero-content {
+  height: 467px;
+  align-items: center;
+}
+
+.hero-services .hero-content {
+    height: 467px;
+    align-items: center;
+}
+
+.hero-contact .hero-content {
+  height: 467px;
+  align-items: center;
+}
+
+.hero-notfound .hero-content {
+  height: 1014px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-notfound .hero-content-wrapper {
+    align-items: center;
+    text-align: center;
+}
+
+.hero-notfound .hero-pretitle{
+    color: var(--color-primary);
+    font-family: urbanist;
+    font-size: 24px;
+    line-height: 25px;
+}
+
+.hero-notfound .hero-title {
+  color: var(--color-accent)
+}
+
 .hero-content {
     display: flex;
     height: 715px;
     gap: 3rem;
     padding-top: 4rem;
+}
+
+.hero-booking .hero-content {
+  height: 477px;
+  align-items: center;
 }
 
 .hero-content-wrapper {
