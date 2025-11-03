@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutSection from '../components/AboutSection';
 import BrandsSection from '../components/BrandsSection';
+import TestimonialsSection from '../components/TestimonialsSection';
 
 
 const AboutPage = () => {
@@ -8,6 +9,7 @@ const AboutPage = () => {
         <>
         <AboutSection/>
         <BrandsSection/>
+        <TestimonialsSection showBackgrondImage={false}/>
         </>
     );
 };
