@@ -3,6 +3,7 @@ import AboutSection from '../components/AboutSection';
 import BrandsSection from '../components/BrandsSection';
 import ServicesSection from '../components/ServicesSection';
 import TestimonialsSection from '../components/TestimonialsSection';
+import WcuSection from '../components/WcuSection';
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
     <BrandsSection/>
     <ServicesSection/>
     <TestimonialsSection showBackgroundImage={true}/>
+    <WcuSection bgVariant ="home"/>
     </>
   );
 }
