@@ -4,6 +4,7 @@ import BrandsSection from '../components/BrandsSection';
 import ServicesSection from '../components/ServicesSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import WcuSection from '../components/WcuSection';
+import PricingSection from '../components/PricingSection';
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
     <ServicesSection/>
     <TestimonialsSection showBackgroundImage={true}/>
     <WcuSection bgVariant ="home"/>
+    <PricingSection/>
     </>
   );
 }

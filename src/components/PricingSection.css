@@ -1,0 +1,96 @@
+.pricingplan-content {
+  padding: 5rem 0rem;
+}
+
+.pricingplan-content > h4,
+.pricingplan-content > h3 {
+  text-align: left;
+  max-width: 563px;
+}
+
+.per-month {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.price-list {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.check-icon {
+  margin-right: 0.75rem;
+  color: var(--color-secondary);
+  transition: color 0.3s ease;
+}
+
+.pricing-card:hover .check-icon,
+.pricing-card:focus-within .check-icon {
+  color: var(--color-accent);
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.pricing-card {
+  background-color: #f1ffea;
+  color: var(--color-secondary);
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem;
+  gap: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pricing-card h5 {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.pricing-card:hover,
+.pricing-card:focus-within {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.card-price {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.per-month {
+  display: flex;
+  align-items: baseline;
+}
+.per-month > h3 {
+  color: var(--color-accent);
+}
+
+.card-price > img {
+  display: flex;
+  align-items: top;
+  margin-bottom: 2rem;
+}
+
+.card-line {
+  border: none;
+  border-top: 1px solid var(--color-secondary);
+  margin: 1.5rem 0.25rem;
+  transition: border-color 0.3s ease;
+}
+
+.pricing-card:hover .card-line,
+.pricing-card:focus-within .card-line {
+  background-color: var(--color-secondary);
+  border-top-color: var(--color-primary);
+}
