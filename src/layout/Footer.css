@@ -1,50 +1,50 @@
 .footer {
-    background-color: var(--color-secondary);
-    color: var(--color-primary);           
-    min-height: 90px;
-    display: flex;
-    align-items: center;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  min-height: 90px;
+  display: flex;
+  align-items: center;
 }
 
 .footer-content {
-    margin: 0 auto; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3rem; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
 }
 
 .footer-list {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-link {
-    color: var(--color-primary);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: var(--font-size-body2); 
-    font-weight: 400;
-    transition: color 0.3s ease;
+  color: var(--color-primary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--font-size-body2);
+  font-weight: 400;
+  transition: color 0.3s ease;
 }
 
 .footer-svg {
-    width: 15px;
-    height: 15px;
-    flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
 }
 
 .footer-link:hover,
 .footer-link:focus-visible {
-    color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .footer-copyright {
-    font-size: var(--font-size-body2);
-    margin: 0;
+  font-size: var(--font-size-body2);
+  margin: 0;
 }

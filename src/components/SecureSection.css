@@ -1,0 +1,15 @@
+.secure-section {
+  background-color: var(--color-accent-3);
+}
+
+.secure-content {
+  color: var(--color-primary);
+  padding: 5.5rem 0rem;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1093px;
+}
+
+.secure-content > p {
+  margin: 1.5rem 0;
+}

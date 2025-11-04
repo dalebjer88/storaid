@@ -57,8 +57,8 @@
 }
 
 .subscribe-input.invalid {
-  border-color: #D00000;
-  color: #D00000;
+  border-color: #d00000;
+  color: #d00000;
 }
 
 .feedback-message {
@@ -73,5 +73,5 @@
 }
 
 .feedback-message.error {
-  color: #D00000;
+  color: #d00000;
 }

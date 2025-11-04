@@ -1,37 +1,48 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom'; 
-import MainLayout from './layout/MainLayout'; 
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ServicesPage from './pages/ServicesPage';
-import ContactPage from './pages/ContactPage';
-import BookingPage from './pages/BookingPage';
-import NotFoundPage from './pages/NotFoundPage';
-import HeroImage from './assets/hero-image.svg';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import MainLayout from "./layout/MainLayout";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ServicesPage from "./pages/ServicesPage";
+import ContactPage from "./pages/ContactPage";
+import BookingPage from "./pages/BookingPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import HeroImage from "./assets/hero-image.svg";
 
 function App() {
   return (
     <Routes>
-      
       {/* 1. HomePage */}
-      <Route 
-        path="/" 
+      <Route
+        path="/"
         element={
-          <MainLayout 
+          <MainLayout
             heroProps={{
               preTitle: "Welcome to StorAid",
               title: "Space Simplified, Storage Perfected",
-              subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a sem magna. Etiam ac odio sit amet lorem fringilla sodales. Cras lobortis, libero at iaculis luctus, nisi ex pellentesque nisi, at euismod sem ipsum ac dolor.",
-              ctaButton: <a href="/discover-more" className="btn btn--primary btn--on-dark">Discover More</a>,
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a sem magna. Etiam ac odio sit amet lorem fringilla sodales. Cras lobortis, libero at iaculis luctus, nisi ex pellentesque nisi, at euismod sem ipsum ac dolor.",
+              ctaButton: (
+                <a
+                  href="/discover-more"
+                  className="btn btn--primary btn--on-dark"
+                >
+                  Discover More
+                </a>
+              ),
               image: (
-                <img 
-                  src={HeroImage} 
-                  alt="An illustration of smart storage solutions and boxes" 
+                <img
+                  src={HeroImage}
+                  alt="An illustration of smart storage solutions and boxes"
                   className="hero-image-placeholder"
-                  onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/500x300/12372A/FFFFFF?text=Pic+Error" }}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src =
+                      "https://placehold.co/500x300/12372A/FFFFFF?text=Pic+Error";
+                  }}
                 />
-              )
-            }} 
+              ),
+            }}
           />
         }
       >
@@ -39,14 +50,15 @@ function App() {
       </Route>
 
       {/* 2. AboutPage */}
-      <Route 
-        path="/about" 
+      <Route
+        path="/about"
         element={
-          <MainLayout 
+          <MainLayout
             heroProps={{
               title: "About Us",
-              subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",              
-              variant: "about"
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+              variant: "about",
             }}
           />
         }
@@ -55,14 +67,15 @@ function App() {
       </Route>
 
       {/* 3. ServicesPage */}
-      <Route 
-        path="/services" 
+      <Route
+        path="/services"
         element={
-          <MainLayout 
+          <MainLayout
             heroProps={{
               title: "Services",
-              subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-              variant: "services"
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+              variant: "services",
             }}
           />
         }
@@ -71,14 +84,15 @@ function App() {
       </Route>
 
       {/* 4. ContactPage */}
-      <Route 
-        path="/contact" 
+      <Route
+        path="/contact"
         element={
-          <MainLayout 
+          <MainLayout
             heroProps={{
               title: "Contact Us",
-              subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-              variant:"contact"
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+              variant: "contact",
             }}
           />
         }
@@ -87,14 +101,15 @@ function App() {
       </Route>
 
       {/* 5. BookingPage */}
-      <Route 
-        path="/booking" 
+      <Route
+        path="/booking"
         element={
-          <MainLayout 
+          <MainLayout
             heroProps={{
               title: "Booking",
-              subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-              variant: "booking"
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+              variant: "booking",
             }}
           />
         }
@@ -103,23 +118,27 @@ function App() {
       </Route>
 
       {/* 6. 404 Page */}
-      <Route 
-        path="*" 
+      <Route
+        path="*"
         element={
-          <MainLayout 
+          <MainLayout
             heroProps={{
               preTitle: "Oops!",
               title: "Page Not Found",
-              subtitle: "Sorry, the page you are looking for does not exist. It may have been moved, removed altogether or is temporarily unavailable.",
-              ctaButton: (<a href="/" className="btn btn--primary btn--on-dark">Back To Home</a>),
-              variant: "notfound"
+              subtitle:
+                "Sorry, the page you are looking for does not exist. It may have been moved, removed altogether or is temporarily unavailable.",
+              ctaButton: (
+                <a href="/" className="btn btn--primary btn--on-dark">
+                  Back To Home
+                </a>
+              ),
+              variant: "notfound",
             }}
           />
         }
       >
         <Route index element={<NotFoundPage />} />
       </Route>
-
     </Routes>
   );
 }

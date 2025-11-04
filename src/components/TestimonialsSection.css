@@ -41,7 +41,7 @@
 }
 
 .testimonials-section.solid-bg {
-  background-color: var(--color-secondary);
+  background-color: var(--color-accent-3);
 }
 
 .test-card {
@@ -53,7 +53,7 @@
 .bot-wrapper {
   display: flex;
   justify-content: space-between;
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 .test-id {
@@ -62,11 +62,11 @@
 }
 
 .avatar-pic {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .role {
-    margin:0;
-    margin-top:0.25rem;
-    font-size: 14px;
+  margin: 0;
+  margin-top: 0.25rem;
+  font-size: 14px;
 }

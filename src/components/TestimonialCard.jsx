@@ -1,9 +1,21 @@
 import React from "react";
 import testIcon from "../assets/test-icon.svg";
 
-const TestimonialCard = ({ id, rating, comment, avatarUrl, name, companyName }) => {
+const TestimonialCard = ({
+  id,
+  rating,
+  comment,
+  avatarUrl,
+  name,
+  companyName,
+}) => {
   return (
-    <article key={id} className="test-card" tabIndex="0" aria-label={`Testimonial from ${name}`}>
+    <article
+      key={id}
+      className="test-card"
+      tabIndex="0"
+      aria-label={`Testimonial from ${name}`}
+    >
       <div className="stars">
         {[...Array(rating)].map((_, i) => (
           <span key={i}>★</span>

@@ -1,91 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap");
 @import "./styles/button.css";
 
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 :root {
-    --color-primary: #FFFFFF;
-    --color-secondary: #12372A;
-    --color-background3: #FAF8EC;
-    --color-accent: #F1C30C;
-    --color-accent-3: rgba(18, 55, 42, 0.8);
-    --font-size-body: 1rem;
-    --font-size-body2: 0.9375rem;
+  --color-primary: #ffffff;
+  --color-secondary: #12372a;
+  --color-background3: #faf8ec;
+  --color-accent: #f1c30c;
+  --color-accent-3: rgba(18, 55, 42, 0.8);
+  --font-size-body: 1rem;
+  --font-size-body2: 0.9375rem;
 }
 
-html, body {
-    margin: 0;
-    scroll-behavior: smooth;
-    color: var(--color-secondary);
-    background-color: var(--color-primary);
-    font-weight: 400;
-    font-family: "Inter";
-    font-style: normal;
-    line-height: 1.5;
+html,
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  font-weight: 400;
+  font-family: "Inter";
+  font-style: normal;
+  line-height: 1.5;
 }
 
 h1 {
-    font-size: 80px;
-    font-weight: 700;
-    color: var(--color-primary)
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--color-primary);
 }
 
 h3 {
-    font-size: 52px;
-    line-height: 52px;
-    font-weight: 700;
-    font-family: urbanist;
-    margin: 0.75rem 0;
+  font-size: 52px;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: urbanist;
+  margin: 0.75rem 0;
 }
 
 h4 {
-    font-size: 25px;
-    font-weight: 600;
-    margin: 0;
-    color: var(--color-accent)
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-accent);
 }
 
 h5 {
-    font-family: urbanist;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 25px;
-    margin: 0;
-    color: var(--color-secondary);
+  font-family: urbanist;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 25px;
+  margin: 0;
+  color: var(--color-secondary);
 }
 
 h6 {
-    margin: 0;
-    font-size: 20px;
-    font-weight: 700;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .container {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1460px;
-    padding: 0 3rem;
-    
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1460px;
+  padding: 0 3rem;
 
-    @media (min-width: 768px) {
-       
-    }
+  @media (min-width: 768px) {
+  }
 
-    @media (min-width: 1920px) {
-       
-    }
+  @media (min-width: 1920px) {
+  }
 }

@@ -1,5 +1,5 @@
 .hero-section {
-    background-color: var(--color-accent-3);
+  background-color: var(--color-accent-3);
 }
 
 .hero-about .hero-content {
@@ -8,8 +8,8 @@
 }
 
 .hero-services .hero-content {
-    height: 467px;
-    align-items: center;
+  height: 467px;
+  align-items: center;
 }
 
 .hero-contact .hero-content {
@@ -24,26 +24,26 @@
 }
 
 .hero-notfound .hero-content-wrapper {
-    align-items: center;
-    text-align: center;
+  align-items: center;
+  text-align: center;
 }
 
-.hero-notfound .hero-pretitle{
-    color: var(--color-primary);
-    font-family: urbanist;
-    font-size: 24px;
-    line-height: 25px;
+.hero-notfound .hero-pretitle {
+  color: var(--color-primary);
+  font-family: urbanist;
+  font-size: 24px;
+  line-height: 25px;
 }
 
 .hero-notfound .hero-title {
-  color: var(--color-accent)
+  color: var(--color-accent);
 }
 
 .hero-content {
-    display: flex;
-    height: 715px;
-    gap: 3rem;
-    padding-top: 4rem;
+  display: flex;
+  height: 715px;
+  gap: 3rem;
+  padding-top: 4rem;
 }
 
 .hero-booking .hero-content {
@@ -52,38 +52,37 @@
 }
 
 .hero-content-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .hero-pretitle {
-    color: var(--color-accent); 
-    margin: 0;
+  color: var(--color-accent);
+  margin: 0;
 }
 
 .hero-title {
-    font-size: 80px;
-    color: var(--color-primary);
-    line-height: 1;
-    margin: 0.5rem 0;
+  font-size: 80px;
+  color: var(--color-primary);
+  line-height: 1;
+  margin: 0.5rem 0;
 }
 
 .hero-subtitle {
-    color: var(--color-primary);
-    width: 700px;
-    margin: 0.5rem 0;
+  color: var(--color-primary);
+  width: 700px;
+  margin: 0.5rem 0;
 }
 
 .hero-actions {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .hero-image-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }

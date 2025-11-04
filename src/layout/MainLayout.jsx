@@ -1,23 +1,22 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom'; 
-import Header from './Header'; 
-import Navbar from './Navbar'; 
-import Footer from './Footer';
-import HeroSection from '../components/HeroSection';
-import SubscribeSection from '../components/SubscribeSection';
-
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Header from "./Header";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import HeroSection from "../components/HeroSection";
+import SubscribeSection from "../components/SubscribeSection";
 
 const MainLayout = ({ heroProps }) => {
   return (
     <>
       <Header />
-      <Navbar /> 
+      <Navbar />
       <main>
-        {heroProps && <HeroSection {...heroProps} />}    
+        {heroProps && <HeroSection {...heroProps} />}
         <Outlet />
-        <SubscribeSection/> 
+        <SubscribeSection />
       </main>
-      <Footer /> 
+      <Footer />
     </>
   );
 };

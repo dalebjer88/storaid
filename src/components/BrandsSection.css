@@ -1,14 +1,14 @@
 .brands-section {
-    background-color: var(--color-background3);
+  background-color: var(--color-background3);
 }
 
 .brands-content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .brands-content {
-    padding: 2.5rem 0;
+  padding: 2.5rem 0;
 }
 
 .brands-content img {
