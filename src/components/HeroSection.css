@@ -30,7 +30,7 @@
 
 .hero-notfound .hero-pretitle {
   color: var(--color-primary);
-  font-family: urbanist;
+  font-family: "urbanist";
   font-size: 24px;
   line-height: 25px;
 }
