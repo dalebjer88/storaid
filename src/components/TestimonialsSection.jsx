@@ -17,7 +17,7 @@ const TestimonialsSection = ({ showBackgroundImage }) => {
         setError(null);
 
         const res = await fetch(
-          "https://win25-jsf-assignment.azurewebsites.net/api/testimonials"
+          "https://win25-jsf-assignment.azurewebsites.net/api/testimonials",
         );
         if (!res.ok) throw new Error("Failed to load testimonials");
 

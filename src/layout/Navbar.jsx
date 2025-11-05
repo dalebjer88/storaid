@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import StoraidLogo from "../assets/storaid-logo.svg";
 
@@ -8,36 +8,36 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-content">
-          <Link to="/" className="navbar-logo">
+          <NavLink to="/" className="navbar-logo">
             <img src={StoraidLogo} alt="Storaid Logotype"></img>
-          </Link>
+          </NavLink>
           <div className="navbar-links">
             <ul>
               <li>
-                <Link to="/" className="navbar-link" aria-current="page">
+                <NavLink to="/" className="navbar-link">
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/about" className="navbar-link">
+                <NavLink to="/about" className="navbar-link">
                   About Us
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/services" className="navbar-link">
+                <NavLink to="/services" className="navbar-link">
                   Services
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/contact" className="navbar-link">
+                <NavLink to="/contact" className="navbar-link">
                   Contact Us
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
-          <Link to="/booking" className="btn btn--primary btn--on-light">
+          <NavLink to="/booking" className="btn btn--primary btn--on-light">
             Book Now
-          </Link>
+          </NavLink>
         </div>
       </div>
     </nav>

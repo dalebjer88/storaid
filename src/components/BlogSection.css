@@ -1,0 +1,26 @@
+.blog-content {
+  padding: 6rem 0;
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.blog-header h3,
+.blog-header p {
+  flex: 1;
+  max-width: 50%;
+}
+
+.blog-header p {
+  display: flex;
+  align-items: flex-end;
+  text-align: left;
+}
+
+.blog-cards {
+  display: flex;
+  gap: 2rem;
+}

@@ -12,7 +12,9 @@
 }
 
 .brands-content img {
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .brands-content img:hover {

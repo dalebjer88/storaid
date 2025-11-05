@@ -6,6 +6,7 @@ import TestimonialsSection from "../components/TestimonialsSection";
 import WcuSection from "../components/WcuSection";
 import PricingSection from "../components/PricingSection";
 import { SecureSection } from "../components/SecureSection";
+import BlogSection from "../components/BlogSection";
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
       <WcuSection bgVariant="home" />
       <PricingSection />
       <SecureSection />
+      <BlogSection/>
     </>
   );
 }

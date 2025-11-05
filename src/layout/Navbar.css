@@ -30,7 +30,7 @@
   transition: color 0.2s ease-in-out;
 }
 
-.navbar-links a[aria-current="page"] {
+.navbar-links .navbar-link[aria-current="page"] {
   color: var(--color-accent);
   padding-bottom: calc(0.5rem - 2px);
 }
