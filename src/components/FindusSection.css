@@ -1,0 +1,106 @@
+.findus-section {
+  background-color: var(--color-accent-3);
+}
+
+.findus-content {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7rem;
+}
+
+.findus-pic {
+  align-self: flex-end;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.findus-text {
+  background-color: rgba(241, 255, 234, 0.8);
+  padding: 3rem 3rem 8rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 664px;
+}
+
+.findus-text > h3,
+.findus-text p {
+  margin: 0;
+  padding-right: 2rem;
+}
+
+.contact-group {
+  color: var(--color-secondary);
+  display: inline-flex;
+  gap: 1rem;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.contact-group:hover .icon-text {
+  transform: scale(1.05);
+}
+
+.contact-group:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-accent);
+  border-radius: 5px;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Urbanist";
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.icon-text h5 {
+  font-size: 24px;
+}
+
+.icon-text p {
+  margin: 0;
+  font-size: 17px;
+}
+
+.icon-bubble {
+  color: var(--color-secondary);
+  transition: fill 0.3s ease;
+}
+
+.bubble-icon {
+  color: var(--color-accent);
+  transition: fill 0.3s ease;
+}
+
+.contact-group:hover .icon-bubble {
+  fill: var(--color-accent);
+}
+
+.contact-group:hover .bubble-icon {
+  fill: var(--color-secondary);
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-media h5 {
+  font-family: "Urbanist";
+  color: var(--color-secondary);
+  white-space: nowrap;
+}
+
+.findus-line {
+  flex: 1;
+  height: 2px;
+  background-color: var(--color-secondary);
+  border: none;
+}

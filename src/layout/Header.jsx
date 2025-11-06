@@ -2,10 +2,7 @@ import React from "react";
 import "./Header.css";
 import PhoneIcon from "../assets/phone-icon.svg";
 import MailIcon from "../assets/mail-icon.svg";
-import FacebookIcon from "../assets/facebook-button.svg";
-import HumbleIcon from "../assets/humble-button.svg";
-import InstagramIcon from "../assets/instagram-button.svg";
-import YoutubeIcon from "../assets/youtube-button.svg";
+import SocialLinks from "../components/SocialLinks";
 
 function Header() {
   return (
@@ -22,44 +19,7 @@ function Header() {
               <span className="header-text">contact@domain.com</span>
             </a>
           </div>
-          <nav className="social-links">
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={FacebookIcon}
-                alt="Facebook"
-                aria-label="Visit us on Facebook"
-              />
-            </a>
-            <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
-              <img src={HumbleIcon} alt="X.com" aria-label="Visit us on X" />
-            </a>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={InstagramIcon}
-                alt="Instagram "
-                aria-label="Visit us on Instagram"
-              />
-            </a>
-            <a
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={YoutubeIcon}
-                alt="Youtube"
-                aria-label="Visit us on Youtube"
-              />
-            </a>
-          </nav>
+          <SocialLinks />
         </div>
       </div>
     </header>
