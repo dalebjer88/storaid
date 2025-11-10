@@ -1,4 +1,3 @@
-import React from "react";
 import FacebookIcon from "../assets/facebook-button.svg";
 import HumbleIcon from "../assets/humble-button.svg";
 import InstagramIcon from "../assets/instagram-button.svg";

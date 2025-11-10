@@ -1,4 +1,3 @@
-import React from "react";
 import AboutSection from "../components/AboutSection";
 import BrandsSection from "../components/BrandsSection";
 import ServicesSection from "../components/ServicesSection";
@@ -20,7 +19,7 @@ export default function HomePage() {
       <WcuSection bgVariant="home" />
       <PricingSection />
       <SecureSection />
-      <BlogSection/>
+      <BlogSection />
     </>
   );
 }

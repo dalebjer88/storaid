@@ -1,4 +1,3 @@
-import React from "react";
 import "./Header.css";
 import PhoneIcon from "../assets/phone-icon.svg";
 import MailIcon from "../assets/mail-icon.svg";

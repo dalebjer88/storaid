@@ -1,4 +1,3 @@
-import React from "react";
 import "./findusSection.css";
 import findusPic from "../assets/findus-img.svg";
 import SocialLinks from "../components/SocialLinks";
@@ -104,8 +103,8 @@ const FindusSection = () => {
             </a>
             <div className="social-media">
               <h5>Our Social Media</h5>
-              <hr className="findus-line"/>
-              <SocialLinks/>
+              <hr className="findus-line" />
+              <SocialLinks />
             </div>
           </div>
         </div>

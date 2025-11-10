@@ -1,4 +1,3 @@
-import React from "react";
 import WcuSection from "../components/WcuSection";
 import SecureSection from "../components/SecureSection";
 import FaqSection from "../components/FaqSection";
@@ -8,7 +7,7 @@ const BookingPage = () => {
     <>
       <WcuSection bgVariant="booking" />
       <SecureSection />
-      <FaqSection/>
+      <FaqSection />
     </>
   );
 };

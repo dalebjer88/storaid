@@ -1,4 +1,3 @@
-import React from "react";
 import servicesimg from "../assets/servicesimg.svg";
 import "./ServicesSection.css";
 

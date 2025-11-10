@@ -4,17 +4,32 @@ import BlogCard from "./BlogCard";
 
 const BlogSection = () => {
   const [posts, setPosts] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://win25-jsf-assignment.azurewebsites.net/api/blogs")
-      .then((res) => res.json())
-      .then((data) => {
+    const fetchBlogs = async () => {
+      try {
+        const res = await fetch(
+          "https://win25-jsf-assignment.azurewebsites.net/api/blogs"
+        );
+
+        if (!res.ok) {
+          throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+
+        const data = await res.json();
         const sorted = data.sort(
           (a, b) => new Date(b.created) - new Date(a.created)
         );
+
         setPosts(sorted.slice(0, 3));
-      })
-      .catch((err) => console.error("Error fetching blogs:", err));
+      } catch (err) {
+        console.error("Error fetching blogs:", err);
+        setError("Failed to load blog posts. Please try again later.");
+      }
+    };
+
+    fetchBlogs();
   }, []);
 
   return (
@@ -34,7 +49,9 @@ const BlogSection = () => {
           </div>
 
           <div className="blog-cards">
-            {posts.length > 0 ? (
+            {error ? (
+              <p className="blog-error">{error}</p>
+            ) : posts.length > 0 ? (
               posts.map((post) => (
                 <BlogCard
                   key={post.id}

@@ -1,4 +1,3 @@
-import React from "react";
 import "./PricingSection.css";
 import dollarIcon from "../assets/dollar-icon.svg";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import testIcon from "../assets/test-icon.svg";
 
 const TestimonialCard = ({

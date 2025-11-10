@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./TestimonialsSection.css";
-import testIcon from "../assets/test-icon.svg";
 import TestimonialCard from "./TestimonialCard";
 
 const TestimonialsSection = ({ showBackgroundImage }) => {
@@ -17,7 +16,7 @@ const TestimonialsSection = ({ showBackgroundImage }) => {
         setError(null);
 
         const res = await fetch(
-          "https://win25-jsf-assignment.azurewebsites.net/api/testimonials",
+          "https://win25-jsf-assignment.azurewebsites.net/api/testimonials"
         );
         if (!res.ok) throw new Error("Failed to load testimonials");
 

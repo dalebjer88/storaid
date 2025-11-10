@@ -1,10 +1,8 @@
-import React from "react";
 import "./Footer.css";
 import "../assets/footer-icon.svg";
 
 const currentYear = 2025;
 const ArrowIcon = (
-  //**svg code clipped from chatgpt*/
   <svg
     width="15"
     height="15"

@@ -1,4 +1,3 @@
-import React from "react";
 import "./WcuSection.css";
 import lock from "../assets/lock-icon.svg";
 import moneyBag from "../assets/money-bag-icon.svg";

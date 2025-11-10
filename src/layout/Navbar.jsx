@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import StoraidLogo from "../assets/storaid-logo.svg";

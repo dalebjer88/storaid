@@ -1,5 +1,3 @@
-import React from "react";
-
 const FaqItem = ({ question, answer, isOpen, onClick }) => {
   const contentId = `faq-${question.replace(/\s+/g, "-").toLowerCase()}`;
 

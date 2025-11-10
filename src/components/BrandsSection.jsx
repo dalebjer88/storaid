@@ -1,4 +1,3 @@
-import React from "react";
 import "./BrandsSection.css";
 import logo1 from "../assets/logoipsum1.svg";
 import logo2 from "../assets/logoipsum2.svg";
