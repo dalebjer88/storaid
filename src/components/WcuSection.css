@@ -70,3 +70,9 @@
   max-width: 83px;
   max-height: 88px;
 }
+
+#wcu-heading {
+  background-color: var(--color-accent-3);
+  border-radius: 5px;
+  padding-left: 2px;
+}

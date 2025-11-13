@@ -1,5 +1,7 @@
 .pricingplan-content {
   padding: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .pricingplan-content > h4,
@@ -49,9 +51,7 @@
   text-align: center;
   padding: 2rem;
   gap: 1rem;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .pricing-card h5 {
@@ -95,4 +95,13 @@
 .pricing-card:focus-within .card-line {
   background-color: var(--color-secondary);
   border-top-color: var(--color-primary);
+}
+
+.pricingplan-content > h4 {
+  background-color: var(--color-accent-3);
+  border-radius: 5px;
+  padding-left: 2px;
+  display: block;
+  max-width: 100%;
+  width: 100%;
 }

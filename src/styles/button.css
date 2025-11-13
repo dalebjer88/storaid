@@ -19,18 +19,26 @@ button.btn {
 .btn--primary {
   background-color: var(--color-accent);
   color: var(--color-secondary);
+  outline: 3px solid var(--color-secondary);
+  outline-offset: -1px;
 }
 
-.btn--on-light:hover,
+.btn--on-light:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-accent);
+}
 .btn--on-light:focus-visible {
   background-color: var(--color-secondary);
-  color: var(--color-primary);
-  outline: 3px solid var(--color-accent);
+  color: var(--color-accent);
+  outline-offset: 2px;
 }
 
-.btn--on-dark:hover,
+.btn--on-dark:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}  
 .btn--on-dark:focus-visible {
   background-color: var(--color-primary);
   color: var(--color-secondary);
-  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
 }

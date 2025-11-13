@@ -27,13 +27,7 @@ export const useForm = (initialValues, endpoint) => {
       const res = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phoneNumber: formData.phoneNumber,
-          subject: formData.subject,
-          comment: formData.comment,
-        }),
+        body: JSON.stringify(formData),
       });
 
       const data = await res.json();

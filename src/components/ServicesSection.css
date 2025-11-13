@@ -32,7 +32,7 @@
 
 .service-pair:hover,
 .service-pair:focus-within {
-  border-color: var(--color-accent);
+  border-color: var(--color-secondary);
 }
 
 .service-pair h4 {
@@ -66,3 +66,8 @@
 #service-img {
   grid-area: img;
 }
+.services-content > h4 {
+  background-color: var(--color-accent-3);
+  border-radius: 5px;
+  padding-left: 2px;
+  }

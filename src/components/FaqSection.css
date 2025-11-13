@@ -1,26 +1,25 @@
 .faq-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 5rem 0;
-    gap: 4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0;
+  gap: 4rem;
 }
 
 .faq-text {
-    flex: 1;
+  flex: 1;
 }
 
 .accordion {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap:0.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .accordion-item {
-  background-color: var(--color-primary);
+  background-color: transparent;
   overflow: hidden;
 }
-
 
 .accordion-question {
   display: flex;
@@ -31,22 +30,32 @@
   font-size: 17px;
   font-family: "urbanist";
   font-weight: 600;
-  background-color: var(--color-primary);
+  background-color: #ececec;
   color: var(--color-secondary);
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.25s ease, color 0.25s ease;
+  outline: none;
+  box-shadow: none;
 }
 
 .accordion-question:hover,
 .accordion-question:focus {
+  background-color: var(--color-secondary);
+  color: var(--color-accent);
+  outline: none;
+  box-shadow: none;
+}
+
+.accordion-question:hover .accordion-arrow,
+.accordion-question:focus .accordion-arrow {
   color: var(--color-accent);
 }
 
 .accordion-question.active {
-  background-color: var(--color-accent);
-  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  color: var(--color-accent);
 }
 
 .accordion-arrow {
@@ -55,7 +64,7 @@
 }
 
 .accordion-question.active .accordion-arrow {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 .accordion-arrow.rotated {
@@ -66,15 +75,22 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
+  background-color: #fff;
 }
 
 .accordion-answer.show {
   max-height: 999px;
-  padding-bottom: 1rem;
+  padding: 1rem 2rem 1.5rem;
 }
 
 .accordion-answer p {
   margin-top: 1rem;
   color: var(--color-secondary);
+}
+
+.faq-text > h4 {
+    background-color: var(--color-accent-3);
+  border-radius: 5px;
+  padding-left: 2px;
 }

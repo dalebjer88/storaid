@@ -3,8 +3,9 @@ import { useForm } from "../hooks/UseForm";
 import getInTouchBg from "../assets/getintouchbg.svg";
 import "./GetintouchSection.css";
 
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,63}$/i;
 const phoneRegex = /^[0-9+\-\s()]{6,20}$/;
+const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,}$/;
 
 const GetintouchSection = () => {
   const [errors, setErrors] = useState({});
@@ -25,13 +26,20 @@ const GetintouchSection = () => {
   const validate = () => {
     const newErrors = {};
 
-    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    } else if (!nameRegex.test(formData.name.trim())) {
+      newErrors.name = "No numbers and at least 2 letters";
+    }
+
     if (!formData.email.trim() || !emailRegex.test(formData.email)) {
       newErrors.email = "Valid email required";
     }
+
     if (formData.phoneNumber && !phoneRegex.test(formData.phoneNumber)) {
       newErrors.phoneNumber = "Invalid phone number";
     }
+
     if (!formData.subject.trim()) newErrors.subject = "Subject is required";
     if (!formData.comment.trim()) newErrors.comment = "Message is required";
 
@@ -67,11 +75,9 @@ const GetintouchSection = () => {
 
   const fieldClass = (fieldName) => {
     const hasError = Boolean(errors[fieldName]);
-    const hasValue = Boolean(formData[fieldName]?.trim());
-
-    let classes = "";
-    if (hasValue && !hasError) classes += " is-valid";
-    return classes.trim();
+    const value = formData[fieldName];
+    const hasValue = Boolean(value?.trim());
+    return hasValue && !hasError ? "is-valid" : "";
   };
 
   return (
@@ -90,7 +96,12 @@ const GetintouchSection = () => {
 
           <form className="getintouch-form" onSubmit={onSubmit} noValidate>
             <div className={`form-field ${errors.name ? "has-error" : ""}`}>
-              <label htmlFor="name">Your Name</label>
+              <div className="label-wrapper">
+                <label htmlFor="name">Your Name</label>
+                {errors.name && (
+                  <span className="label-error">{errors.name}</span>
+                )}
+              </div>
               <input
                 type="text"
                 id="name"
@@ -108,7 +119,12 @@ const GetintouchSection = () => {
                   errors.email ? "has-error" : ""
                 }`}
               >
-                <label htmlFor="email">Email</label>
+                <div className="label-wrapper">
+                  <label htmlFor="email">Email</label>
+                  {errors.email && (
+                    <span className="label-error">{errors.email}</span>
+                  )}
+                </div>
                 <input
                   type="email"
                   id="email"
@@ -125,7 +141,12 @@ const GetintouchSection = () => {
                   errors.phoneNumber ? "has-error" : ""
                 }`}
               >
-                <label htmlFor="phoneNumber">Telephone</label>
+                <div className="label-wrapper">
+                  <label htmlFor="phoneNumber">Telephone</label>
+                  {errors.phoneNumber && (
+                    <span className="label-error">{errors.phoneNumber}</span>
+                  )}
+                </div>
                 <input
                   type="tel"
                   id="phoneNumber"
@@ -139,7 +160,12 @@ const GetintouchSection = () => {
             </div>
 
             <div className={`form-field ${errors.subject ? "has-error" : ""}`}>
-              <label htmlFor="subject">Subject</label>
+              <div className="label-wrapper">
+                <label htmlFor="subject">Subject</label>
+                {errors.subject && (
+                  <span className="label-error">{errors.subject}</span>
+                )}
+              </div>
               <input
                 type="text"
                 id="subject"
@@ -152,7 +178,12 @@ const GetintouchSection = () => {
             </div>
 
             <div className={`form-field ${errors.comment ? "has-error" : ""}`}>
-              <label htmlFor="comment">Comments / Questions</label>
+              <div className="label-wrapper">
+                <label htmlFor="comment">Comments / Questions</label>
+                {errors.comment && (
+                  <span className="label-error">{errors.comment}</span>
+                )}
+              </div>
               <textarea
                 id="comment"
                 name="comment"
@@ -177,7 +208,11 @@ const GetintouchSection = () => {
                   {message}
                 </p>
               )}
-              {globalError && <p className="form-error">{globalError}</p>}
+              {globalError && (
+                <p className="form-error" aria-live="polite">
+                  {globalError}
+                </p>
+              )}
             </div>
           </form>
         </div>

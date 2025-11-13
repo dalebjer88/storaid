@@ -24,3 +24,9 @@
   display: flex;
   gap: 2rem;
 }
+
+.blog-content > h4 {
+  background-color: var(--color-accent-3);
+  border-radius: 5px;
+  padding-left: 2px;
+}

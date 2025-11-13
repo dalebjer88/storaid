@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./SubscribeSection.css";
 
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,63}$/i;
 
 const SubscribeSection = () => {
   const [email, setEmail] = useState("");

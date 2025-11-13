@@ -22,7 +22,7 @@
 
 .vm-pair:hover,
 .vm-pair:focus-within {
-  border-color: var(--color-accent);
+  border-color: var(--color-secondary);
 }
 
 .about-contact {
@@ -44,4 +44,10 @@
 
 .about-btn {
   height: 45px;
+}
+
+.about-info > h4 {
+  background-color: var(--color-accent-3);
+  border-radius: 5px;
+  padding-left: 2px;
 }

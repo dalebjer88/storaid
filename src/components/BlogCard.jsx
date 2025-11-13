@@ -1,4 +1,5 @@
 import "./BlogCard.css";
+import { Link } from "react-router-dom";
 
 const BlogCard = ({ imageUrl, title, description, created, id }) => {
   const formattedDate = new Intl.DateTimeFormat("en-US", {
@@ -30,9 +31,9 @@ const BlogCard = ({ imageUrl, title, description, created, id }) => {
 
       <p className="blog-description">{description}</p>
 
-      <a href={`/blog/${id}`} className="read-more">
+      <Link to={`/blog/`} className="btn btn--primary btn--on-light">
         Read more →
-      </a>
+      </Link>
     </article>
   );
 };

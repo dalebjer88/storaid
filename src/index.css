@@ -106,5 +106,6 @@ h6 {
 .social-links a:hover,
 .social-links a:focus {
   outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
   border-radius: 50%;
 }

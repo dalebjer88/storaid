@@ -1,67 +1,79 @@
-.getintouch-section {
+.bookingunit-section {
   background-color: var(--color-primary);
   padding: 5rem 0;
 }
 
-.getintouch-content {
+.bookingunit-content {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
-.textandpic {
-  flex: 1;
-  min-height: 450px;
-}
-
-.textandpic h4 {
-  background-color: var(--color-accent-3);
-  border-radius: 5px;
-  padding-left: 2px;
-}
-
-.getintouch-form {
+.textandpic,
+.pandform {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.pandform {
+  padding-top: 4.5rem;
+}
+
+.textandpic h4 {
+  font-family: "urbanist";
+}
+
+.textandpic h3 {
+  margin: 0 0 2rem 0;
+}
+
+.bookingunit-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   gap: 1.25rem;
   background-color: #faf8ec;
-  padding: 2rem 2rem 2.5rem 2rem;
+  padding: 2rem;
   border-radius: 6px;
+  max-height: 545px;
+}
+
+.bookingunit-form input,
+.bookingunit-form textarea,
+.bookingunit-form select {
+  width: 100%;
+  padding: 1rem 1rem;
+  border: 1px solid #858585;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #858585;
+  border-radius: 4px;
+  outline: none;
+  appearance: none;
+}
+
+.bookingunit-form input::placeholder,
+.bookingunit-form textarea::placeholder {
+  color: #858585;
+  opacity: 1;
+}
+
+.bookingunit-form label {
+  font-weight: 400;
+  color: var(--color-secondary);
+  margin: 0;
+  display: block;
 }
 
 .form-field {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
-}
-
-.getintouch-form input,
-.getintouch-form textarea {
-  width: 100%;
-  padding: 1.1rem 1rem;
-  border: 1px solid var(--color-accent);
-  border-radius: 4px;
-  background-color: #ffffff;
-  font-family: "inter";
-  font-weight: 400;
-  font-size: 1rem;
-  color: var(--color-accent);
-  outline: none;
-  border-color: #858585;
-}
-
-.getintouch-form input::placeholder,
-.getintouch-form textarea::placeholder {
-  color: #858585;
-  opacity: 1;
-}
-
-.getintouch-form label {
-  font-weight: 400;
-  color: var(--color-secondary);
-  margin: 0;
-  display: block;
 }
 
 .form-row {
@@ -74,41 +86,24 @@
 }
 
 .form-field:not(.has-error) input:focus,
-.form-field:not(.has-error) textarea:focus {
+.form-field:not(.has-error) textarea:focus,
+.form-field:not(.has-error) select:focus {
   border-color: var(--color-secondary);
   color: var(--color-secondary);
 }
 
-.getintouch-form input.is-valid,
-.getintouch-form textarea.is-valid {
+.bookingunit-form input.is-valid,
+.bookingunit-form textarea.is-valid,
+.bookingunit-form select.is-valid {
   border-color: var(--color-secondary);
   color: var(--color-secondary);
 }
 
-.form-field.has-error input::placeholder,
-.form-field.has-error textarea::placeholder {
+.form-field.has-error input,
+.form-field.has-error textarea,
+.form-field.has-error select {
+  border-color: red;
   color: red;
-}
-
-.getintouch-form textarea {
-  min-height: 150px;
-  resize: none;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: var(--color-accent) #f1f1f1;
-}
-
-.getintouch-form textarea::-webkit-scrollbar {
-  width: 6px;
-}
-
-.getintouch-form textarea::-webkit-scrollbar-thumb {
-  background-color: var(--color-accent);
-  border-radius: 3px;
-}
-
-.getintouch-form textarea::-webkit-scrollbar-track {
-  background: #f1f1f1;
 }
 
 .form-field.has-error label::after {
@@ -117,30 +112,32 @@
   margin-left: 0.1rem;
 }
 
-.form-field.has-error input,
-.form-field.has-error textarea {
-  border-color: red;
-  color: red;
+.bookingunit-form textarea {
+  min-height: 150px;
+  resize: none;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-accent) #f1f1f1;
 }
 
-.getintouch-form button {
-  padding-left: 4rem;
-  padding-right: 4rem;
-  align-self: flex-start;
-  cursor: pointer;
+.bookingunit-form textarea::-webkit-scrollbar {
+  width: 6px;
+}
+
+.bookingunit-form textarea::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent);
   border-radius: 3px;
 }
 
-.form-success {
-  color: green;
-  font-weight: 600;
-  margin-top: 1rem;
+.bookingunit-form textarea::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-.form-error {
-  color: red;
-  font-weight: 600;
-  margin-top: 1rem;
+.bookingunit-form button {
+  padding: 0 4rem;
+  align-self: flex-start;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
 .form-submit {
@@ -166,16 +163,15 @@
   color: red;
 }
 
+.form-field {
+  position: relative;
+}
+
 .label-wrapper {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  width: 100%;
-}
-
-.label-wrapper label {
-  position: relative;
-  font-weight: 500;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .label-error {
