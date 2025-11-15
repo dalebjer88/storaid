@@ -1,7 +1,7 @@
 import "./BlogCard.css";
 import { Link } from "react-router-dom";
 
-const BlogCard = ({ imageUrl, title, description, created, id }) => {
+const BlogCard = ({ imageUrl, title, description, created }) => {
   const formattedDate = new Intl.DateTimeFormat("en-US", {
     year: "numeric",
     month: "long",

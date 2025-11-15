@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./BlogSection.css";
 import BlogCard from "./BlogCard";
 
@@ -55,7 +55,6 @@ const BlogSection = () => {
               posts.map((post) => (
                 <BlogCard
                   key={post.id}
-                  id={post.id}
                   title={post.title}
                   description={post.description}
                   imageUrl={post.imageUrl}

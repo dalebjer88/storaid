@@ -15,6 +15,11 @@
   --color-accent-3: rgba(18, 55, 42, 0.8);
   --font-size-body: 1rem;
   --font-size-body2: 0.9375rem;
+  --header-height: 135px;
+}
+
+main {
+  padding-top: var(--header-height);
 }
 
 html,
@@ -108,4 +113,17 @@ h6 {
   outline: 3px solid var(--color-primary);
   outline-offset: 3px;
   border-radius: 50%;
+}
+
+.top-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  background-color: white;
+}
+
+.top-wrapper-hidden {
+  transform: translateY(-100%);
 }

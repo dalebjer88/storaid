@@ -28,7 +28,7 @@ const BookingunitSection = () => {
     if (!formData.name.trim()) {
       newErrors.name = "Name is required";
     } else if (!nameRegex.test(formData.name.trim())) {
-      newErrors.name = "No numbers and at least 2 letters";
+      newErrors.name = "At least two (letters)";
     }
 
     if (!formData.email.trim() || !emailRegex.test(formData.email))

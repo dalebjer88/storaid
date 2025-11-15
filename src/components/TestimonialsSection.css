@@ -56,6 +56,10 @@
   align-items: flex-end;
 }
 
+.bot-wrapper > svg {
+color: var(--color-accent-3);
+}
+
 .test-id {
   display: flex;
   gap: 1rem;
